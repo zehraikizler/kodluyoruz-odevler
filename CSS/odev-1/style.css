@@ -1,0 +1,47 @@
+/* Colors #E8F0F2 #39A2DB #053742 */
+
+body {
+    text-align: center;
+    background-color: #E8F0F2;
+}
+
+h1 {
+    color:#053742;
+    font-weight: bolder;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.navbar {
+    margin: 20px;
+    text-decoration: underline;
+    color: #0172af;
+    font-size: 20px;
+}
+
+h2 {
+    color: #8c04fc;
+    margin-top: 60px;
+}
+
+h3 {
+    color: #39A2DB;
+    margin-top: 30px;
+}
+
+li {
+    list-style-position: inside;
+}
+
+
+.about-content {
+    text-align: justify; 
+    margin-left: 13%; 
+    margin-right: 13%;
+}
+
+img {
+    height: 300x;
+    width: 300px;
+}

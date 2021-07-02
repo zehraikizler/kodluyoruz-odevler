@@ -1,0 +1,58 @@
+body {
+    background-color: #dfeaec;
+}
+
+.title {
+    color: rgb(23, 156, 245) !important;
+    font-size: 28px !important;
+    font-weight: 900;
+}
+
+.body-page {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    color: rgb(55, 158, 89) !important;
+    font-size: 50px !important;
+}
+
+h3 {
+    color: #df5f2d !important;
+    margin-top: 50px !important;
+}
+
+.list-ortala {
+    list-style-position: inside;
+    margin-left: -30px;
+}
+
+.button {
+    margin-top: 50px;
+}
+
+.button-link {
+    color: white;
+}
+
+.button-link:hover {
+    text-decoration: none;
+}
+
+.about-content {
+    text-align: justify; 
+    margin-left: 13%; 
+    margin-right: 13%;
+    margin-top: 40px;
+}
+
+.products-page {
+    margin: 5% 20%;
+    text-align: center;
+}
+
+.urun-card {
+    margin: 30px;
+    width: 100px !important;
+}

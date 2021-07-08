@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Instagram</title>
+</head>
+<body>
+    <!-- NAVBAR-->
+
+    <div class="container-nav">
+        <div class="container px-0 px-lg-4">
+            <nav class="navbar navbar-expand-lg navbar-light mx-0 mx-lg-5">
+                
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/nav-logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+    
+                <div class="search px-2 rounded" style="margin-left: 22%;">
+                    <div class="d-flex">
+                        <span class="search-icon pb-1 mr-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </span>
+                        <input type="search" placeholder="Search" class="search-input ml-auto">
+                    </div>
+                </div>
+    
+              
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item active mr-1">
+                        <a class="nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-1">
+                        <a class="nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="color: black;" width="24" height="24" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                                <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-1">
+                        <a class="nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="color: black;" width="24" height="24" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+                                <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-1">
+                        <a href="#" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="color: black;" width="24" height="24" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="profilphoto rounded-circle" src="assets/zehra_ikizler.jpg" alt="#">
+                        </a>
+                    </li>
+                  </ul>            
+                </div>
+    
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- CONTENT-->
+
+    <div class="content">
+        <div class="container">
+            <div class="rowspapen">
+                <div class="col-10  pl-0 pr-0 offset-1">
+                    <div class="rowspapen">
+
+                        <!-- left bar -->
+
+                        <div class="colon-1">
+                            
+                            <!-- STORY -->
+                            <div class="px-0 content-margin img-content">
+                                <ul class="img-list pt-4">
+                                    <li>
+                                        <img src="https://picsum.photos/id/237/200/300" class="head-image rounded-circle" alt="image 1">
+                                        <p>Adipisicing</p>
+                                    </li>
+                                    <li>
+                                        <img src="https://picsum.photos/id/137/200/300" class="head-image rounded-circle" alt="image 2">
+                                        <p>İpsum</p>
+                                    </li>
+                                    <li>
+                                        <img src="https://picsum.photos/id/37/200/300" class="head-image rounded-circle" alt="image 3">
+                                        <p>Dolor</p>
+                                    </li>
+                                    <li>
+                                        <img src="https://picsum.photos/id/247/200/300" class="head-image rounded-circle" alt="image 4">
+                                        <p>Amet</p>
+                                    </li>
+                                    <li>
+                                        <img src="https://picsum.photos/id/7/200/300" class="head-image rounded-circle" alt="image 4">
+                                        <p>Consecte</p>
+                                    </li>
+                                    <li class="last">
+                                        <img src="https://picsum.photos/id/57/200/300" class="head-image rounded-circle" alt="image 5">
+                                        <p>Lorem</p>
+                                    </li>
+                                    <li class="last">
+                                        <img src="https://picsum.photos/id/18/200/300" class="head-image rounded-circle" alt="image 5">
+                                        <p class="last-p">Elit</p>
+                                    </li>
+                                </ul>        
+                            </div>
+
+
+                            <!-- POST -->
+
+                            <!-- post-1 -->
+                            <div class="card mt-4">
+                                <div class="card-header">
+                                    <ul class="card-list d-flex align-items-center">
+                                        <li>
+                                            <img src="https://picsum.photos/id/58/200/300" class="head-post rounded-circle" alt="image">
+                                        </li>
+                                        <li class="ml-3">
+                                            <b>Lorem</b>
+                                        </li>
+                                        <li class="ml-auto">
+                                            <a href="#">
+                                                <b>...</b>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://picsum.photos/id/8/500/600" alt="image-post">
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul class="post-icons d-flex">
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="color: rgb(228, 58, 58);" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                                        <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cursor" viewBox="0 0 16 16">
+                                                        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="ml-auto">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 d-flex align-items-center">
+                                            <img src="https://picsum.photos/id/90/200/300" class="foot-like rounded-circle" alt="image">
+                                            <span class="ml-1 post-like"><b>Lorem.</b> and <b>289 others</b> like</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <ul class="footer-list-2">
+                                                <li class="post-like">
+                                                    <b>Lorem,</b>
+                                                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, veniam?😂</span>
+                                                </li>
+                                                <li class="post-like">
+                                                    <span style="color: rgb(179, 176, 176);">Show all 15 comments.</span>
+                                                </li>
+                                                <li class="post-like">
+                                                    <b>dolor.</b>
+                                                    <span>Lorem, ipsum.😍😜</span>
+                                                </li>
+                                                <li class="post-like">
+                                                    <b>sit.</b>
+                                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.❤🎉</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="hour mt-2">5 HOURS AGO</p>
+                                        </div>
+                                        <div class="col-12 footer-commit d-flex align-items-center">
+                                            <ul class="footer-list d-flex mt-2">
+                                                <li class="footer-list-li">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                        <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="footer-list-li ml-3">
+                                                    <input type="text" placeholder="Add Comment">
+                                                </li>
+                                                <li class="footer-list-li ml-auto">
+                                                    <b>Share</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- post-2 -->
+                            <div class="card mt-4">
+                                <div class="card-header">
+                                    <ul class="card-list d-flex align-items-center">
+                                        <li>
+                                            <img src="https://picsum.photos/id/28/200/300" class="head-post rounded-circle" alt="image">
+                                        </li>
+                                        <li class="ml-3">
+                                            <b>İpsum</b>
+                                        </li>
+                                        <li class="ml-auto">
+                                            <a href="#">
+                                                <b>...</b>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://picsum.photos/id/41/500/600" alt="image-post">
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul class="post-icons d-flex">
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                                        <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cursor" viewBox="0 0 16 16">
+                                                        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="ml-auto">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 d-flex align-items-center">
+                                            <img src="https://picsum.photos/id/90/200/300" class="foot-like rounded-circle" alt="image">
+                                            <span class="ml-1 post-like"><b>Lorem.</b> and <b>903 others</b> like</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <ul class="footer-list-2">
+                                                <li class="post-like">
+                                                    <b>İpsum</b>
+                                                    <span>lorem 😜😂</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="hour mt-2">7 HOURS AGO</p>
+                                        </div>
+                                        <div class="col-12 footer-commit d-flex align-items-center">
+                                            <ul class="footer-list d-flex mt-2">
+                                                <li class="footer-list-li">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                        <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="footer-list-li ml-3">
+                                                    <input type="text" placeholder="Add Comment">
+                                                </li>
+                                                <li class="footer-list-li ml-auto">
+                                                    <b>Share</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- post-3 -->
+                            <div class="card mt-4">
+                                <div class="card-header">
+                                    <ul class="card-list d-flex align-items-center">
+                                        <li>
+                                            <img src="https://picsum.photos/id/21/200/300" class="head-post rounded-circle" alt="image">
+                                        </li>
+                                        <li class="ml-3">
+                                            <b>Dolor</b>
+                                        </li>
+                                        <li class="ml-auto">
+                                            <a href="#">
+                                                <b>...</b>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://picsum.photos/id/67/500/600" alt="image-post">
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul class="post-icons d-flex">
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                                        <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cursor" viewBox="0 0 16 16">
+                                                        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="ml-auto">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 d-flex align-items-center">
+                                            <img src="https://picsum.photos/id/90/200/300" class="foot-like rounded-circle" alt="image">
+                                            <span class="ml-1 post-like"><b>Lorem.</b> and <b>289 others</b> like</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <ul class="footer-list-2">
+                                                <li class="post-like">
+                                                    <b>dolor.</b>
+                                                    <span>Lorem, ipsum.😍😜</span>
+                                                </li>
+                                                <li class="post-like">
+                                                    <b>sit.</b>
+                                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.❤🎉</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="hour mt-2">12 HOURS AGO</p>
+                                        </div>
+                                        <div class="col-12 footer-commit d-flex align-items-center">
+                                            <ul class="footer-list d-flex mt-2">
+                                                <li class="footer-list-li">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                        <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="footer-list-li ml-3">
+                                                    <input type="text" placeholder="Add Comment">
+                                                </li>
+                                                <li class="footer-list-li ml-auto">
+                                                    <b>Share</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- post-4 -->
+                            <div class="card mt-4">
+                                <div class="card-header">
+                                    <ul class="card-list d-flex align-items-center">
+                                        <li>
+                                            <img src="https://picsum.photos/id/60/200/300" class="head-post rounded-circle" alt="image">
+                                        </li>
+                                        <li class="ml-3">
+                                            <b>Sit</b>
+                                        </li>
+                                        <li class="ml-auto">
+                                            <a href="#">
+                                                <b>...</b>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://picsum.photos/id/210/500/600" alt="image-post">
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul class="post-icons d-flex">
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                                        <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cursor" viewBox="0 0 16 16">
+                                                        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="ml-auto">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 d-flex align-items-center">
+                                            <img src="https://picsum.photos/id/90/200/300" class="foot-like rounded-circle" alt="image">
+                                            <span class="ml-1 post-like"><b>Lorem.</b> and <b>289 others</b> like</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <ul class="footer-list-2">
+                                                <li class="post-like">
+                                                    <b>Lorem,</b>
+                                                    <span>😂</span>
+                                                </li>
+                                                <li class="post-like">
+                                                    <span style="color: rgb(179, 176, 176);">Show all 58 comments.</span>
+                                                </li>
+                                                <li class="post-like">
+                                                    <b>dolor.</b>
+                                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing. 🤦‍♂️</span>
+                                                </li>
+                                                <li class="post-like">
+                                                    <b>sit.</b>
+                                                    <span>Lorem, ipsum dolor.🤢</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="hour mt-2">5 HOURS AGO</p>
+                                        </div>
+                                        <div class="col-12 footer-commit d-flex align-items-center">
+                                            <ul class="footer-list d-flex mt-2">
+                                                <li class="footer-list-li">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                        <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="footer-list-li ml-3">
+                                                    <input type="text" placeholder="Add Comment">
+                                                </li>
+                                                <li class="footer-list-li ml-auto">
+                                                    <b>Share</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- post-5 -->
+                            <div class="card mt-4">
+                                <div class="card-header">
+                                    <ul class="card-list d-flex align-items-center">
+                                        <li>
+                                            <img src="https://picsum.photos/id/29/200/300" class="head-post rounded-circle" alt="image">
+                                        </li>
+                                        <li class="ml-3">
+                                            <b>Amet</b>
+                                        </li>
+                                        <li class="ml-auto">
+                                            <a href="#">
+                                                <b>...</b>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://picsum.photos/id/30/500/600" alt="image-post">
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul class="post-icons d-flex">
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                                        <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="mr-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cursor" viewBox="0 0 16 16">
+                                                        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="ml-auto">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 d-flex align-items-center">
+                                            <img src="https://picsum.photos/id/90/200/300" class="foot-like rounded-circle" alt="image">
+                                            <span class="ml-1 post-like"><b>Lorem.</b> and <b>289 others</b> like</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <ul class="footer-list-2">
+                                                <li class="post-like">
+                                                    <b>Lorem,</b>
+                                                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur doloremque maxime in. 😎👍</span>
+                                                </li>
+                                                <li class="post-like">
+                                                    <span style="color: rgb(179, 176, 176);">Show all 5 comments.</span>
+                                                </li>
+                                                <li class="post-like">
+                                                    <b>dolor.</b>
+                                                    <span>Lorem, ipsum.😍😜</span>
+                                                </li>
+                                                <li class="post-like">
+                                                    <b>sit.</b>
+                                                    <span>❤🎉</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="hour mt-2">24 HOURS AGO</p>
+                                        </div>
+                                        <div class="col-12 footer-commit d-flex align-items-center">
+                                            <ul class="footer-list d-flex mt-2">
+                                                <li class="footer-list-li">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                        <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="footer-list-li ml-3">
+                                                    <input type="text" placeholder="Add Comment">
+                                                </li>
+                                                <li class="footer-list-li ml-auto">
+                                                    <b>Share</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!-- aside bar -->
+
+                        <div class="colon-2">
+
+                            <div class="mt-3">
+                                <ul class="aside-head-list d-flex">
+                                    <li class="list-1 d-flex">
+                                        <a href="#">
+                                            <img src="assets/zehra_ikizler.jpg" class="profil-photo rounded-circle d-flex" alt="profilphoto">
+                                        </a>
+                                    </li>
+                                    <li class="list-2 d-flex">
+                                        <a href="#">
+                                            <p class="d-flex">
+                                                <b>
+                                                    zehraikizler
+                                                </b>
+                                            </p>
+                                            <p class="d-flex">zehraikizler</p>
+                                        </a>
+                                    </li>
+                                    <li class="list-3 d-flex ml-auto">
+                                        <a href="#">
+                                            <p class="d-flex">Switch</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="Suggestions row mb-3">
+                                <div class="col-6">
+                                    <b>Suggestions for You</b>
+                                </div>
+                                <div class="col-6">
+                                    <b class="see-all float-right">
+                                        See all
+                                    </b>
+                                </div>
+                            </div>
+
+                            <div>
+                                <ul class="aside-head-list d-flex align-items-center aside-bottom">
+                                    <li class="list-1 d-flex">
+                                        <a href="#">
+                                            <img src="https://picsum.photos/id/89/200/300" style="width: 30px; height: 30px;" class="rounded-circle d-flex" alt="profilphoto">
+                                        </a>
+                                    </li>
+                                    <li class="list-2 d-flex">
+                                        <a href="#">
+                                            <p class="d-flex">
+                                                <b style="color: rgb(66, 66, 66);">
+                                                    Labore
+                                                </b>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="list-3 d-flex ml-auto">
+                                        <a href="#">
+                                            <p class="d-flex">Follow</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+ 
+                            <div>
+                                <ul class="aside-head-list d-flex align-items-center aside-bottom">
+                                    <li class="list-1 d-flex">
+                                        <a href="#">
+                                            <img src="https://picsum.photos/id/98/200/300" style="width: 30px; height: 30px;" class="rounded-circle d-flex" alt="profilphoto">
+                                        </a>
+                                    </li>
+                                    <li class="list-2 d-flex">
+                                        <a href="#">
+                                            <p class="d-flex">
+                                                <b style="color: rgb(66, 66, 66);">
+                                                    Voluptatum
+                                                </b>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="list-3 d-flex ml-auto">
+                                        <a href="#">
+                                            <p class="d-flex">Follow</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <ul class="aside-head-list d-flex align-items-center aside-bottom">
+                                    <li class="list-1 d-flex">
+                                        <a href="#">
+                                            <img src="https://picsum.photos/id/67/200/300" style="width: 30px; height: 30px;" class="rounded-circle d-flex" alt="profilphoto">
+                                        </a>
+                                    </li>
+                                    <li class="list-2 d-flex">
+                                        <a href="#">
+                                            <p class="d-flex">
+                                                <b style="color: rgb(66, 66, 66);">
+                                                    Libero
+                                                </b>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="list-3 d-flex ml-auto">
+                                        <a href="#">
+                                            <p class="d-flex">Follow</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <ul class="aside-head-list d-flex align-items-center aside-bottom">
+                                    <li class="list-1 d-flex">
+                                        <a href="#">
+                                            <img src="https://picsum.photos/id/32/200/300" style="width: 30px; height: 30px;" class="rounded-circle d-flex" alt="profilphoto">
+                                        </a>
+                                    </li>
+                                    <li class="list-2 d-flex">
+                                        <a href="#">
+                                            <p class="d-flex">
+                                                <b style="color: rgb(66, 66, 66);">
+                                                    Reprehenderit
+                                                </b>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="list-3 d-flex ml-auto">
+                                        <a href="#">
+                                            <p class="d-flex">Follow</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <ul class="aside-head-list d-flex align-items-center aside-bottom">
+                                    <li class="list-1 d-flex">
+                                        <a href="#">
+                                            <img src="https://picsum.photos/id/75/200/300" style="width: 30px; height: 30px;" class="rounded-circle d-flex" alt="profilphoto">
+                                        </a>
+                                    </li>
+                                    <li class="list-2 d-flex">
+                                        <a href="#">
+                                            <p class="d-flex">
+                                                <b style="color: rgb(66, 66, 66);">
+                                                    Dolorem
+                                                </b>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="list-3 d-flex ml-auto">
+                                        <a href="#">
+                                            <p class="d-flex">Follow</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="footer">
+                                <div>
+                                    <span>About-Help-Press-API-Business Opportunities-Privacy-</span>
+                                </div>
+                                <div>
+                                    <span>Terms-Locations-Major Accounts-Topic Tags-Language</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

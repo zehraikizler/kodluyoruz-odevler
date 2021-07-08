@@ -1,0 +1,274 @@
+/* NAVBAR */
+
+.container-nav {
+    border-bottom: 1px solid rgb(212, 208, 208) !important;
+}
+
+.navbar {
+    width: 100%;
+    height: 54px;
+    padding-left: 23px;
+}
+
+
+.search {
+ background-color: rgba(var(--b3f,250,250,250),1);
+ width: 215px;
+ height: 28px;
+ border: 1px solid rgb(212, 208, 208) !important;
+}
+
+.search-input {
+    border: transparent;
+    width: 60%;
+    background-color: 1px solid rgba(var(--b3f,250,250,250),1);
+    font-size: 14px;
+}
+
+.search-input:focus {
+    outline: 0;
+}
+
+.search-icon {
+    margin-left: 65px;
+    color: rgba(142,142,142);
+}
+
+.navbar-nav {
+    margin-left: 34% !important;
+}
+
+
+.profilphoto {
+    height: 24px;
+    width: 24px;
+}
+
+
+/* CONTENT */
+
+.content {
+    background-color: rgba(var(--b3f,250,250,250),1) !important;
+}
+
+.rowspapen {
+    display: grid;
+    grid-template: 100%/ 613px 330px;
+}
+
+/* LEFT BAR */
+
+        /* STORY */
+
+.content-margin {
+    margin-top: 30px;
+}
+
+.img-content {
+    background-color: white;
+    border: 1px solid rgb(212, 208, 208);
+    height: 125px;
+}
+
+.img-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.img-list > li {
+    display: inline-block; 
+    text-align: center;
+}
+
+.img-list >li > p {
+    font-size: 14px;
+    color: rgb(146, 139, 139);
+}
+
+
+.img-list > .last > p {
+    color: rgb(212, 208, 208);
+}
+
+.img-list > .last > img {
+    border: 2px solid #d3d2d2;
+}
+
+
+.head-image {
+    width: 65px;
+    height: 65px;
+    border: 3px solid #DD2A7B;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+        /* POST */
+
+.card-header {
+    background-color: white;
+    height: 70px;
+}
+.card-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card-list > li {
+    display: inline-block;
+}
+
+.card-list > li > a {
+    color: black;
+}
+
+.head-post {
+    width: 45px;
+    height: 45px;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-body > img {
+    width: 100%;
+}
+
+.post-icons {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.post-icons > li {
+    display: inline-block;
+}
+
+.card-footer {
+    background-color: white;
+}
+
+.foot-like {
+    height: 20px;
+    width: 20px;
+
+}
+
+.post-like {
+    font-size: 14px;
+}
+
+.hour {
+    font-size: 13px;
+    color: gray;
+}
+
+.footer-list-2 {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer-commit {
+    border-top: 1.5px solid rgb(202, 202, 202);
+    height: 50px;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.footer-list-li {
+    display: inline-block;
+}
+
+.footer-list-li > input {
+    border: transparent;
+}
+
+.footer-list-li > input:focus {
+    outline: 0;
+}
+
+.footer-list-li > b {
+    color: rgb(150, 197, 241);
+}
+
+
+/* ASİDE */
+
+.aside-head-list {
+    list-style-type: none;
+    margin-left: -10px;
+}
+
+.aside-head-list>li>a:hover {
+    text-decoration: none;
+    color: rgba(var(--d69,0,149,246),1);
+}
+
+.list-1 {
+    margin-top: 26px;
+}
+
+.list-2 {
+    margin-top: 34px;
+    margin-left: 18px;
+}
+
+.list-2 > a > p:first-child {
+    color: black;
+    margin-bottom: 0;
+}
+
+.list-2 > a > p:last-child {
+    color: rgb(136, 132, 132);
+    margin-top: -6px;
+}
+
+.list-3 {
+    margin-top: 45px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+.profil-photo {
+    height: 58px;
+    width: 58px;
+}
+
+.aside-bottom {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.aside-bottom > li {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.Suggestions {
+    margin-left: 20px; 
+    width: 100%; 
+    font-size: 14px;
+}
+
+.Suggestions > div:first-child {
+    color: rgb(175, 174, 174);
+}
+
+.see-all {
+    font-size: 13px; 
+    margin-right: 8px;
+}
+
+.footer {
+    font-size: 12px; 
+    margin-left: 40px; 
+    margin-top: 20px; 
+    color: rgb(185, 184, 184);
+}

@@ -2,6 +2,7 @@
 
 .container-nav {
     border-bottom: 1px solid rgb(212, 208, 208) !important;
+    background: white;
 }
 
 .navbar {
@@ -200,6 +201,13 @@
 
 /* ASİDE */
 
+.colon-2 {
+    position: fixed !important;
+    right: 0 !important;
+    margin-right: 19.5% !important;
+    margin-top: 10px;
+}
+
 .aside-head-list {
     list-style-type: none;
     margin-left: -10px;
@@ -251,13 +259,13 @@
     margin-bottom: 8px;
 }
 
-.Suggestions {
+.suggestions {
     margin-left: 20px; 
     width: 100%; 
     font-size: 14px;
 }
 
-.Suggestions > div:first-child {
+.suggestions > div:first-child {
     color: rgb(175, 174, 174);
 }
 

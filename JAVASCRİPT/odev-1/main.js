@@ -1,5 +1,3 @@
-// ilk olarak prompt ile isminizi yazmayı isteyip merhaba yazısından sonra ekrana yazdırmalıyız.
-
 let userName = prompt("İsminiz Nedir?").toUpperCase();
 
 let Name = document.querySelector("#userName");

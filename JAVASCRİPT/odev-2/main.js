@@ -75,15 +75,19 @@ const addTodo = (e) =>  {
     
 }
 
-// const deleteTodo = (e) => {
-//     console.log(e.target);
-// }
+const deleteTodo = (e) => {
+    const todo = e.target.parentElement.parentElement;
+    const text = todo.firstChildren[1].textContent;
+
+    let todos = JSON.parse(localStorage.getItem("todos"));
+    todos = todos.filter(td => td.text != text);
+    localStorage.setItem("todos", JSON.stringify(todos));
+
+    todo.remove();
+}
 
 form.addEventListener("submit", addTodo);
-// deleteBtns.forEach(btn => btn.addEventListener('click', deleteTodo));
 
+// yazdığım kodda butonların her birini seçemiyorum sadece bir tanesini seçebiliyorum :(
+deleteBtns.forEach(btn => btn.addEventListener("click", deleteTodo));
 
-deleteBtns.addEventListener('click', function(e){
-    const todo = e.target.parentElement.parentElement;
-    todo.remove();
-})

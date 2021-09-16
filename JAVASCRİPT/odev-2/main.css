@@ -1,0 +1,86 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 2.5rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+
+.todo_div {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.todo_input {
+    padding: 10px;
+    width: 400px;
+    border: 0;
+    margin-right: 3px;
+}
+
+.todo_input:focus {
+    outline: 0;
+}
+
+.todo_btn {
+    background-color: white;
+    color: orangered;
+    border: 0;
+}
+
+.todo_btn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 202, 183);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.todo_container {
+    background-color: white;
+    color: black;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.todo {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+.todo_right {
+    margin-left: auto;
+}
+
+.todo_delete {
+    border: none;
+    color: white;
+    background-color: orangered; 
+    font-size: 18px;
+}
+
+.todo_delete:hover {
+    cursor: pointer;
+    background-color: rgb(255, 111, 59);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.todo_cb {
+    margin-right: 10px;
+}
+
+.todo_cb:checked ~ .todo_text {
+    text-decoration: line-through;
+    color: gray;
+}
